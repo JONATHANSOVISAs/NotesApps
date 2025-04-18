@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aplikasi Catatan</title>
+
+   
+  </head>
+  <body>
+    <!-- BAGIAN HEADER -->
+    <app-bar></app-bar>
+
+    <main>
+      <div class="notes-container">
+        <!-- Form Tambah Catatan -->
+        <note-form></note-form>
+
+        <section id="notes" class="notes-section">
+
+          <div class="daftar-catatan" style="display: flex; align-items: center; gap: 1px">
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-512/free-notes-logo-icon-download-in-svg-png-gif-file-formats--document-notebook-notepad-apple-apps-pack-logos-icons-2741679.png?f=webp&w=512"
+              alt="Logo Catatan"
+              style="width: 40px; height: 40px"
+            />
+            <h2>DAFTAR CATATAN SAYA</h2>
+          </div>
+
+          <div id="notesDataContainer">
+            <loading-indicator style="display: none"></loading-indicator>
+
+            <div id="notesDataList" style="display: grid;">
+              <div class="list"></div>
+            </div>
+          </div>
+          
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+    <!-- BAGIAN FOOTER -->
+    <footer-bar></footer-bar>
+  </body>
+</html>
